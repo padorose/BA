@@ -37,6 +37,11 @@ public class Account {
     public void showAccount(){
         System.out.println("Account number is: " + accountNo +". Name is: "+ accountName+ ". " +
                 "Surname is: "+accountSurname + ". Your balance is: "+ balance + "." );
+    }   public boolean searchAccount(int accountNo){
+        if(this.accountNo==accountNo){
+            return true;
+        }
+            return false;
+        }
     }
 
-}
